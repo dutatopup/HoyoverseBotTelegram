@@ -11,6 +11,7 @@ Install telegrambot for python `pip3 install python-telegram-bot requests`
 Install UTC  `pip install pytz`
 
 <hr>
+
 Jalankan script dengan `python3 bot.py` atau `nohup python3 bot.py`
 
 
