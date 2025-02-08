@@ -27,3 +27,5 @@ Jalankan script dengan `python3 bot.py` atau `nohup python3 bot.py`
 
 ### Rute :
 Ketika perintah `/` dijalankan, maka bot pertama akan memproses valaidasi ke server API Hoyoverse untuk mendapatkan data yang akan dikirimkan menjadi balasan melalui telegram dan kemudian script akan menyimpan hasil data menjadi backup file `Updates_nama_game.html`.
+
+Telegram bot https://te.me/HoyoverseUpdate_Bot
