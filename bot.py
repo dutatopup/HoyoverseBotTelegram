@@ -134,18 +134,6 @@ def save_to_html_gi(full_installation_files, old_patches, new_patches, file_path
     else:
         html_content += "<p>No old patches available.</p>\n"
 
-    html_content += "<h2>New Patches</h2>\n"
-    if new_patches:
-        for patch in new_patches:
-            html_content += f"<h3>Version {patch['version']}</h3>\n<ul>"
-            for file in patch['game_pkgs']:
-                html_content += f"<li><a href=\"{file['url']}\">{file['type']}</a> ({file['size']})</li>\n"
-            for file in patch['audio_pkgs']:
-                html_content += f"<li><a href=\"{file['url']}\">{file['type']}</a> ({file['size']})</li>\n"
-            html_content += "</ul>"
-    else:
-        html_content += "<p>No new patches available.</p>\n"
-
     html_content += "</body></html>"
 
     with open(file_path, "w") as file:
@@ -322,18 +310,6 @@ def save_to_html_zzz(full_installation_files, old_patches, new_patches, file_pat
             html_content += "</ul>"
     else:
         html_content += "<p>No old patches available.</p>\n"
-
-    html_content += "<h2>New Patches</h2>\n"
-    if new_patches:
-        for patch in new_patches:
-            html_content += f"<h3>Version {patch['version']}</h3>\n<ul>"
-            for file in patch['game_pkgs']:
-                html_content += f"<li><a href=\"{file['url']}\">{file['type']}</a> ({file['size']})</li>\n"
-            for file in patch['audio_pkgs']:
-                html_content += f"<li><a href=\"{file['url']}\">{file['type']}</a> ({file['size']})</li>\n"
-            html_content += "</ul>"
-    else:
-        html_content += "<p>No new patches available.</p>\n"
 
     html_content += "</body></html>"
 
@@ -512,18 +488,6 @@ def save_to_html_hsr(full_installation_files, old_patches, new_patches, file_pat
             html_content += "</ul>"
     else:
         html_content += "<p>No old patches available.</p>\n"
-
-    html_content += "<h2>New Patches</h2>\n"
-    if new_patches:
-        for patch in new_patches:
-            html_content += f"<h3>Version {patch['version']}</h3>\n<ul>"
-            for file in patch['game_pkgs']:
-                html_content += f"<li><a href=\"{file['url']}\">{file['type']}</a> ({file['size']})</li>\n"
-            for file in patch['audio_pkgs']:
-                html_content += f"<li><a href=\"{file['url']}\">{file['type']}</a> ({file['size']})</li>\n"
-            html_content += "</ul>"
-    else:
-        html_content += "<p>No new patches available.</p>\n"
 
     html_content += "</body></html>"
 
